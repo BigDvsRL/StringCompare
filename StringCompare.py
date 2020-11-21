@@ -1,6 +1,6 @@
 def check_str_(String, Comstring, Threshhold=0.8, skip=["#"]):
     # String is the main String, he will be compared with Comstring
-    if isinstance(skip, str):
+    if not isinstance(skip, list):
         skip = [str(skip)]
     try:
         if len(Check) == 0:
